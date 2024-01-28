@@ -44,7 +44,7 @@ class SalesViewModel: ObservableObject {
     
     static var preview: SalesViewModel {
         let vm = SalesViewModel()
-        vm.salesData = Sale.examples
+        vm.salesData = Sale.threeMonthsExamples()
         vm.lastTotalSales = 1200
         return vm
     }

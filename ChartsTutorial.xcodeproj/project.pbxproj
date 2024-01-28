@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DC576D9B2B665F80006391C7 /* SalesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC576D9A2B665F80006391C7 /* SalesViewModel.swift */; };
+		DC576DA22B666465006391C7 /* DailySalesChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC576DA12B666465006391C7 /* DailySalesChartView.swift */; };
+		DC576DA42B66647C006391C7 /* WeeklyChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC576DA32B66647C006391C7 /* WeeklyChartsView.swift */; };
+		DC576DA62B666489006391C7 /* MonthlyChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC576DA52B666489006391C7 /* MonthlyChartsView.swift */; };
 		DC703EB02B6606E500E589E1 /* ChartsTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EAF2B6606E500E589E1 /* ChartsTutorialApp.swift */; };
 		DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EB12B6606E500E589E1 /* ContentView.swift */; };
 		DC703EB42B6606E700E589E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC703EB32B6606E700E589E1 /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		DC576D9A2B665F80006391C7 /* SalesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewModel.swift; sourceTree = "<group>"; };
+		DC576DA12B666465006391C7 /* DailySalesChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySalesChartView.swift; sourceTree = "<group>"; };
+		DC576DA32B66647C006391C7 /* WeeklyChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChartsView.swift; sourceTree = "<group>"; };
+		DC576DA52B666489006391C7 /* MonthlyChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyChartsView.swift; sourceTree = "<group>"; };
 		DC703EAC2B6606E500E589E1 /* ChartsTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC703EAF2B6606E500E589E1 /* ChartsTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTutorialApp.swift; sourceTree = "<group>"; };
 		DC703EB12B6606E500E589E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +73,9 @@
 		DC576D9D2B6662CD006391C7 /* sales stats */ = {
 			isa = PBXGroup;
 			children = (
+				DC576DA12B666465006391C7 /* DailySalesChartView.swift */,
+				DC576DA32B66647C006391C7 /* WeeklyChartsView.swift */,
+				DC576DA52B666489006391C7 /* MonthlyChartsView.swift */,
 			);
 			path = "sales stats";
 			sourceTree = "<group>";
@@ -213,11 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC576DA62B666489006391C7 /* MonthlyChartsView.swift in Sources */,
 				DC703EC82B6610C400E589E1 /* Expense.swift in Sources */,
 				DC703EC02B66071800E589E1 /* BookCategory.swift in Sources */,
+				DC576DA22B666465006391C7 /* DailySalesChartView.swift in Sources */,
 				DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */,
 				DC576D9B2B665F80006391C7 /* SalesViewModel.swift in Sources */,
 				DC703EC22B6607E500E589E1 /* Author.swift in Sources */,
+				DC576DA42B66647C006391C7 /* WeeklyChartsView.swift in Sources */,
 				DC703EC42B6608B700E589E1 /* Book.swift in Sources */,
 				DC703EC62B660D1600E589E1 /* Sale.swift in Sources */,
 				DC703EB02B6606E500E589E1 /* ChartsTutorialApp.swift in Sources */,
