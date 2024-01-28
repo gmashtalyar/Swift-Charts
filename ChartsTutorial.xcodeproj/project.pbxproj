@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC576D9B2B665F80006391C7 /* SalesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC576D9A2B665F80006391C7 /* SalesViewModel.swift */; };
 		DC703EB02B6606E500E589E1 /* ChartsTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EAF2B6606E500E589E1 /* ChartsTutorialApp.swift */; };
 		DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EB12B6606E500E589E1 /* ContentView.swift */; };
 		DC703EB42B6606E700E589E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC703EB32B6606E700E589E1 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC576D9A2B665F80006391C7 /* SalesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewModel.swift; sourceTree = "<group>"; };
 		DC703EAC2B6606E500E589E1 /* ChartsTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC703EAF2B6606E500E589E1 /* ChartsTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTutorialApp.swift; sourceTree = "<group>"; };
 		DC703EB12B6606E500E589E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC576D992B665F67006391C7 /* view models */ = {
+			isa = PBXGroup;
+			children = (
+				DC576D9A2B665F80006391C7 /* SalesViewModel.swift */,
+			);
+			path = "view models";
+			sourceTree = "<group>";
+		};
+		DC576D9C2B6662C5006391C7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DC576DA02B6662FA006391C7 /* weekday stats */,
+				DC576D9F2B6662E3006391C7 /* expenses stats */,
+				DC576D9E2B6662D7006391C7 /* book category stats */,
+				DC576D9D2B6662CD006391C7 /* sales stats */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DC576D9D2B6662CD006391C7 /* sales stats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "sales stats";
+			sourceTree = "<group>";
+		};
+		DC576D9E2B6662D7006391C7 /* book category stats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "book category stats";
+			sourceTree = "<group>";
+		};
+		DC576D9F2B6662E3006391C7 /* expenses stats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "expenses stats";
+			sourceTree = "<group>";
+		};
+		DC576DA02B6662FA006391C7 /* weekday stats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "weekday stats";
+			sourceTree = "<group>";
+		};
 		DC703EA32B6606E500E589E1 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +111,8 @@
 		DC703EAE2B6606E500E589E1 /* ChartsTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				DC576D9C2B6662C5006391C7 /* view */,
+				DC576D992B665F67006391C7 /* view models */,
 				DC703EBE2B6606FC00E589E1 /* model */,
 				DC703EAF2B6606E500E589E1 /* ChartsTutorialApp.swift */,
 				DC703EB12B6606E500E589E1 /* ContentView.swift */,
@@ -165,6 +216,7 @@
 				DC703EC82B6610C400E589E1 /* Expense.swift in Sources */,
 				DC703EC02B66071800E589E1 /* BookCategory.swift in Sources */,
 				DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */,
+				DC576D9B2B665F80006391C7 /* SalesViewModel.swift in Sources */,
 				DC703EC22B6607E500E589E1 /* Author.swift in Sources */,
 				DC703EC42B6608B700E589E1 /* Book.swift in Sources */,
 				DC703EC62B660D1600E589E1 /* Sale.swift in Sources */,
