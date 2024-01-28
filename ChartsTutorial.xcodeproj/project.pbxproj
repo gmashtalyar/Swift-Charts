@@ -11,6 +11,11 @@
 		DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EB12B6606E500E589E1 /* ContentView.swift */; };
 		DC703EB42B6606E700E589E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC703EB32B6606E700E589E1 /* Assets.xcassets */; };
 		DC703EB82B6606E700E589E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC703EB72B6606E700E589E1 /* Preview Assets.xcassets */; };
+		DC703EC02B66071800E589E1 /* BookCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EBF2B66071700E589E1 /* BookCategory.swift */; };
+		DC703EC22B6607E500E589E1 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EC12B6607E500E589E1 /* Author.swift */; };
+		DC703EC42B6608B700E589E1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EC32B6608B700E589E1 /* Book.swift */; };
+		DC703EC62B660D1600E589E1 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EC52B660D1600E589E1 /* Sale.swift */; };
+		DC703EC82B6610C400E589E1 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EC72B6610C400E589E1 /* Expense.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		DC703EB32B6606E700E589E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC703EB52B6606E700E589E1 /* ChartsTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChartsTutorial.entitlements; sourceTree = "<group>"; };
 		DC703EB72B6606E700E589E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC703EBF2B66071700E589E1 /* BookCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCategory.swift; sourceTree = "<group>"; };
+		DC703EC12B6607E500E589E1 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		DC703EC32B6608B700E589E1 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		DC703EC52B660D1600E589E1 /* Sale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
+		DC703EC72B6610C400E589E1 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,7 @@
 		DC703EAE2B6606E500E589E1 /* ChartsTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				DC703EBE2B6606FC00E589E1 /* model */,
 				DC703EAF2B6606E500E589E1 /* ChartsTutorialApp.swift */,
 				DC703EB12B6606E500E589E1 /* ContentView.swift */,
 				DC703EB32B6606E700E589E1 /* Assets.xcassets */,
@@ -67,6 +78,18 @@
 				DC703EB72B6606E700E589E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC703EBE2B6606FC00E589E1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DC703EBF2B66071700E589E1 /* BookCategory.swift */,
+				DC703EC12B6607E500E589E1 /* Author.swift */,
+				DC703EC32B6608B700E589E1 /* Book.swift */,
+				DC703EC52B660D1600E589E1 /* Sale.swift */,
+				DC703EC72B6610C400E589E1 /* Expense.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC703EC82B6610C400E589E1 /* Expense.swift in Sources */,
+				DC703EC02B66071800E589E1 /* BookCategory.swift in Sources */,
 				DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */,
+				DC703EC22B6607E500E589E1 /* Author.swift in Sources */,
+				DC703EC42B6608B700E589E1 /* Book.swift in Sources */,
+				DC703EC62B660D1600E589E1 /* Sale.swift in Sources */,
 				DC703EB02B6606E500E589E1 /* ChartsTutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
