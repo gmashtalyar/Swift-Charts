@@ -20,6 +20,7 @@
 		DC703EC42B6608B700E589E1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EC32B6608B700E589E1 /* Book.swift */; };
 		DC703EC62B660D1600E589E1 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EC52B660D1600E589E1 /* Sale.swift */; };
 		DC703EC82B6610C400E589E1 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EC72B6610C400E589E1 /* Expense.swift */; };
+		DC7D4ECD2B67AE2700833015 /* SimpleBookSalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D4ECC2B67AE2700833015 /* SimpleBookSalesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DC703EC32B6608B700E589E1 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		DC703EC52B660D1600E589E1 /* Sale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
 		DC703EC72B6610C400E589E1 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		DC7D4ECC2B67AE2700833015 /* SimpleBookSalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBookSalesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				DC576DA12B666465006391C7 /* DailySalesChartView.swift */,
 				DC576DA32B66647C006391C7 /* WeeklyChartsView.swift */,
 				DC576DA52B666489006391C7 /* MonthlyChartsView.swift */,
+				DC7D4ECC2B67AE2700833015 /* SimpleBookSalesView.swift */,
 			);
 			path = "sales stats";
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				DC703EC82B6610C400E589E1 /* Expense.swift in Sources */,
 				DC703EC02B66071800E589E1 /* BookCategory.swift in Sources */,
 				DC576DA22B666465006391C7 /* DailySalesChartView.swift in Sources */,
+				DC7D4ECD2B67AE2700833015 /* SimpleBookSalesView.swift in Sources */,
 				DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */,
 				DC576D9B2B665F80006391C7 /* SalesViewModel.swift in Sources */,
 				DC703EC22B6607E500E589E1 /* Author.swift in Sources */,
