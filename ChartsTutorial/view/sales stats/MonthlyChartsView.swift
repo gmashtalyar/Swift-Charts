@@ -16,17 +16,7 @@ struct MonthlyChartsView: View {
                 AxisValueLabel(format: .dateTime.month(.abbreviated), centered: true)
             }
         }
-        .chartYAxis {
-            
-            AxisMarks(position: .leading) { _ in //values: [100, 200]
-                //AxisGridLine(stroke: .init(dash: [10, 20]))
-                //AxisTick()
-                AxisGridLine()
-                
-                AxisValueLabel()
-                
-            }
-        }
+
     }
 }
 

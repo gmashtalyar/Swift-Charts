@@ -1,24 +1,23 @@
-//
-//  ContentView.swift
-//  ChartsTutorial
-//
-//  Created by Геннадий Машталяр on 28.01.2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var salesViewModel = SalesViewModel.preview
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                NavigationLink {
+                    DetailBookSalesView(salesViewModel: salesViewModel)
+                } label: {
+                    SimpleBookSalesView(salesViewModel: salesViewModel)
+                }
+            }
+            .navigationTitle("Your book store stats")
         }
-        .padding()
     }
 }
 
-//#Preview {
-//    ContentView()
-//}
+#Preview {
+    ContentView()
+}
