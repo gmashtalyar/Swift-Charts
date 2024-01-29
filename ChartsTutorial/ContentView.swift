@@ -9,6 +9,7 @@ struct ContentView: View {
             List {
                 NavigationLink {
                     DetailBookSalesView(salesViewModel: salesViewModel)
+                        .navigationBarTitleDisplayMode(.inline)
                 } label: {
                     SimpleBookSalesView(salesViewModel: salesViewModel)
                 }

@@ -14,7 +14,7 @@ struct DetailBookSalesView: View {
     @State private var selectedTimeInterval = TimeInterval.day
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Picker(selection: $selectedTimeInterval.animation()) {
                 ForEach(TimeInterval.allCases) { interval in
                     Text(interval.rawValue)
