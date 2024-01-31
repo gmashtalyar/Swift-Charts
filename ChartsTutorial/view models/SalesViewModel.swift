@@ -15,6 +15,21 @@ class SalesViewModel: ObservableObject {
         return totalSalesPerDate(salesByDate: salesByWeek)
     }
     
+    var highestSellingWeekday: (number: Int, sales: Double)? {
+        averageSalesByWeekday.max(by: { $0.sales < $1.sales })
+    }
+    
+    var averageSalesByWeekday: [(number: Int, sales: Double)] {
+        return []
+    }
+    
+    var salesByWeekDay: [(number: Int, sales: [Sale])] {
+        let salesByWeekday = salesGroupedByWeekday(sales: salesData).map {
+            (number: $0.key, sales: $0.value)
+        }
+        return salesByWeekday.sorted{ $0.number < $1.number }
+    }
+    
     init() {
         
     }
@@ -40,6 +55,33 @@ class SalesViewModel: ObservableObject {
             totalSales.append((day: date, sales: totalQuantityForDate))
         }
         return totalSales
+    }
+    
+    func salesGroupedByWeekday(sales: [Sale]) -> [Int: [Sale]] {
+        var salesByWeekday: [Int: [Sale]] = [:]
+        let calendar = Calendar.current
+        
+        for sale in sales {
+            let weekday = calendar.component(.weekday, from: sale.saleDate)
+            if salesByWeekday[weekday] != nil {
+                salesByWeekday[weekday]!.append(sale)
+            } else {
+                salesByWeekday[weekday] = [sale]
+            }
+        }
+        return salesByWeekday
+    }
+    
+    func averageSalesPerNumber(salesByNumber: [Int: [Sale]]) -> [(number: Int, sales: Double)] {
+        var averageSales: [(number: Int, sales: Double)] = []
+        
+        for (number, sales) in salesByNumber {
+            let count = sales.count
+            let totalQuantityForWeekday = sales.reduce(0) { $0 + $1.quantity }
+            averageSales.append((number: number, sales: Double(totalQuantityForWeekday) / Double(count)))
+        }
+        
+        return averageSales
     }
     
     static var preview: SalesViewModel {
