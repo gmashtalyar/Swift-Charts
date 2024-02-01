@@ -20,7 +20,10 @@ class SalesViewModel: ObservableObject {
     }
     
     var averageSalesByWeekday: [(number: Int, sales: Double)] {
-        return []
+        let salesByWeekday = salesGroupedByWeekday(sales: salesData)
+        let averageSales = averageSalesPerNumber(salesByNumber: salesByWeekday)
+        let sorted = averageSales.sorted { $0.number < $1.number }
+        return sorted
     }
     
     var salesByWeekDay: [(number: Int, sales: [Sale])] {
@@ -28,6 +31,11 @@ class SalesViewModel: ObservableObject {
             (number: $0.key, sales: $0.value)
         }
         return salesByWeekday.sorted{ $0.number < $1.number }
+    }
+    
+    var medianSales: Double {
+        let salesData = self.averageSalesByWeekday
+        return calculateMedian(salesData: salesData) ?? 0
     }
     
     init() {
@@ -84,9 +92,23 @@ class SalesViewModel: ObservableObject {
         return averageSales
     }
     
+    func calculateMedian(salesData: [(number: Int, sales: Double)]) -> Double? {
+        let quantities = salesData.map { $0.sales }.sorted()
+        let count = quantities.count
+        
+        if count % 2 == 0 {
+            let middleIndex = count / 2
+            let median = (quantities[middleIndex - 1] + quantities[middleIndex]) / 2
+            return Double(median)
+        } else {
+            let middleIndex = count / 2
+            return Double(quantities[middleIndex])
+        }
+    }
+    
     static var preview: SalesViewModel {
         let vm = SalesViewModel()
-        vm.salesData = Sale.threeMonthsExamples()
+        vm.salesData = Sale.higherWeekendThreeMonthExamples
         vm.lastTotalSales = 1200
         return vm
     }

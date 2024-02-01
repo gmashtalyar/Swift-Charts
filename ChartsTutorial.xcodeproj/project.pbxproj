@@ -22,6 +22,9 @@
 		DC703EC82B6610C400E589E1 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EC72B6610C400E589E1 /* Expense.swift */; };
 		DC7D4ECD2B67AE2700833015 /* SimpleBookSalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D4ECC2B67AE2700833015 /* SimpleBookSalesView.swift */; };
 		DC7D4ECF2B67B65400833015 /* DetailBookSalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D4ECE2B67B65400833015 /* DetailBookSalesView.swift */; };
+		DCC5E8812B6A39AF00768784 /* SalesByWeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5E8802B6A39AF00768784 /* SalesByWeekDayView.swift */; };
+		DCC5E8832B6A39D200768784 /* SimpleSalesByWeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5E8822B6A39D200768784 /* SimpleSalesByWeekdayView.swift */; };
+		DCC5E8852B6A3F6500768784 /* SalesByWeekdayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5E8842B6A3F6500768784 /* SalesByWeekdayHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		DC703EC72B6610C400E589E1 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		DC7D4ECC2B67AE2700833015 /* SimpleBookSalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBookSalesView.swift; sourceTree = "<group>"; };
 		DC7D4ECE2B67B65400833015 /* DetailBookSalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookSalesView.swift; sourceTree = "<group>"; };
+		DCC5E8802B6A39AF00768784 /* SalesByWeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesByWeekDayView.swift; sourceTree = "<group>"; };
+		DCC5E8822B6A39D200768784 /* SimpleSalesByWeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSalesByWeekdayView.swift; sourceTree = "<group>"; };
+		DCC5E8842B6A3F6500768784 /* SalesByWeekdayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesByWeekdayHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 		DC576DA02B6662FA006391C7 /* weekday stats */ = {
 			isa = PBXGroup;
 			children = (
+				DCC5E8802B6A39AF00768784 /* SalesByWeekDayView.swift */,
+				DCC5E8822B6A39D200768784 /* SimpleSalesByWeekdayView.swift */,
+				DCC5E8842B6A3F6500768784 /* SalesByWeekdayHeaderView.swift */,
 			);
 			path = "weekday stats";
 			sourceTree = "<group>";
@@ -233,9 +242,12 @@
 				DC703EC82B6610C400E589E1 /* Expense.swift in Sources */,
 				DC703EC02B66071800E589E1 /* BookCategory.swift in Sources */,
 				DC576DA22B666465006391C7 /* DailySalesChartView.swift in Sources */,
+				DCC5E8812B6A39AF00768784 /* SalesByWeekDayView.swift in Sources */,
 				DC7D4ECD2B67AE2700833015 /* SimpleBookSalesView.swift in Sources */,
+				DCC5E8832B6A39D200768784 /* SimpleSalesByWeekdayView.swift in Sources */,
 				DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */,
 				DC576D9B2B665F80006391C7 /* SalesViewModel.swift in Sources */,
+				DCC5E8852B6A3F6500768784 /* SalesByWeekdayHeaderView.swift in Sources */,
 				DC703EC22B6607E500E589E1 /* Author.swift in Sources */,
 				DC576DA42B66647C006391C7 /* WeeklyChartsView.swift in Sources */,
 				DC703EC42B6608B700E589E1 /* Book.swift in Sources */,
