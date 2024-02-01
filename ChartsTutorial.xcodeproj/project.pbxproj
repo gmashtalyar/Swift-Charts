@@ -22,6 +22,11 @@
 		DC703EC82B6610C400E589E1 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EC72B6610C400E589E1 /* Expense.swift */; };
 		DC7D4ECD2B67AE2700833015 /* SimpleBookSalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D4ECC2B67AE2700833015 /* SimpleBookSalesView.swift */; };
 		DC7D4ECF2B67B65400833015 /* DetailBookSalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D4ECE2B67B65400833015 /* DetailBookSalesView.swift */; };
+		DC81CF4E2B6C2E210056A1E2 /* SalesPerBookCategoryPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81CF4D2B6C2E210056A1E2 /* SalesPerBookCategoryPieChartView.swift */; };
+		DC81CF502B6C2E390056A1E2 /* SalesPerBookCategoryBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81CF4F2B6C2E390056A1E2 /* SalesPerBookCategoryBarChartView.swift */; };
+		DC81CF522B6C2E500056A1E2 /* SalesPerBookCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81CF512B6C2E500056A1E2 /* SalesPerBookCategoryView.swift */; };
+		DC81CF542B6C2E6D0056A1E2 /* SimpleSalesPerBookCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81CF532B6C2E6D0056A1E2 /* SimpleSalesPerBookCategoryView.swift */; };
+		DC81CF562B6C2EBB0056A1E2 /* SalesPerBookCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81CF552B6C2EBB0056A1E2 /* SalesPerBookCategoryHeaderView.swift */; };
 		DCC5E8812B6A39AF00768784 /* SalesByWeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5E8802B6A39AF00768784 /* SalesByWeekDayView.swift */; };
 		DCC5E8832B6A39D200768784 /* SimpleSalesByWeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5E8822B6A39D200768784 /* SimpleSalesByWeekdayView.swift */; };
 		DCC5E8852B6A3F6500768784 /* SalesByWeekdayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5E8842B6A3F6500768784 /* SalesByWeekdayHeaderView.swift */; };
@@ -45,6 +50,11 @@
 		DC703EC72B6610C400E589E1 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		DC7D4ECC2B67AE2700833015 /* SimpleBookSalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBookSalesView.swift; sourceTree = "<group>"; };
 		DC7D4ECE2B67B65400833015 /* DetailBookSalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookSalesView.swift; sourceTree = "<group>"; };
+		DC81CF4D2B6C2E210056A1E2 /* SalesPerBookCategoryPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPerBookCategoryPieChartView.swift; sourceTree = "<group>"; };
+		DC81CF4F2B6C2E390056A1E2 /* SalesPerBookCategoryBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPerBookCategoryBarChartView.swift; sourceTree = "<group>"; };
+		DC81CF512B6C2E500056A1E2 /* SalesPerBookCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPerBookCategoryView.swift; sourceTree = "<group>"; };
+		DC81CF532B6C2E6D0056A1E2 /* SimpleSalesPerBookCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSalesPerBookCategoryView.swift; sourceTree = "<group>"; };
+		DC81CF552B6C2EBB0056A1E2 /* SalesPerBookCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPerBookCategoryHeaderView.swift; sourceTree = "<group>"; };
 		DCC5E8802B6A39AF00768784 /* SalesByWeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesByWeekDayView.swift; sourceTree = "<group>"; };
 		DCC5E8822B6A39D200768784 /* SimpleSalesByWeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSalesByWeekdayView.swift; sourceTree = "<group>"; };
 		DCC5E8842B6A3F6500768784 /* SalesByWeekdayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesByWeekdayHeaderView.swift; sourceTree = "<group>"; };
@@ -95,6 +105,11 @@
 		DC576D9E2B6662D7006391C7 /* book category stats */ = {
 			isa = PBXGroup;
 			children = (
+				DC81CF4D2B6C2E210056A1E2 /* SalesPerBookCategoryPieChartView.swift */,
+				DC81CF4F2B6C2E390056A1E2 /* SalesPerBookCategoryBarChartView.swift */,
+				DC81CF512B6C2E500056A1E2 /* SalesPerBookCategoryView.swift */,
+				DC81CF532B6C2E6D0056A1E2 /* SimpleSalesPerBookCategoryView.swift */,
+				DC81CF552B6C2EBB0056A1E2 /* SalesPerBookCategoryHeaderView.swift */,
 			);
 			path = "book category stats";
 			sourceTree = "<group>";
@@ -238,14 +253,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC576DA62B666489006391C7 /* MonthlyChartsView.swift in Sources */,
+				DC81CF562B6C2EBB0056A1E2 /* SalesPerBookCategoryHeaderView.swift in Sources */,
 				DC7D4ECF2B67B65400833015 /* DetailBookSalesView.swift in Sources */,
 				DC703EC82B6610C400E589E1 /* Expense.swift in Sources */,
 				DC703EC02B66071800E589E1 /* BookCategory.swift in Sources */,
 				DC576DA22B666465006391C7 /* DailySalesChartView.swift in Sources */,
+				DC81CF502B6C2E390056A1E2 /* SalesPerBookCategoryBarChartView.swift in Sources */,
+				DC81CF4E2B6C2E210056A1E2 /* SalesPerBookCategoryPieChartView.swift in Sources */,
+				DC81CF522B6C2E500056A1E2 /* SalesPerBookCategoryView.swift in Sources */,
 				DCC5E8812B6A39AF00768784 /* SalesByWeekDayView.swift in Sources */,
 				DC7D4ECD2B67AE2700833015 /* SimpleBookSalesView.swift in Sources */,
 				DCC5E8832B6A39D200768784 /* SimpleSalesByWeekdayView.swift in Sources */,
 				DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */,
+				DC81CF542B6C2E6D0056A1E2 /* SimpleSalesPerBookCategoryView.swift in Sources */,
 				DC576D9B2B665F80006391C7 /* SalesViewModel.swift in Sources */,
 				DCC5E8852B6A3F6500768784 /* SalesByWeekdayHeaderView.swift in Sources */,
 				DC703EC22B6607E500E589E1 /* Author.swift in Sources */,
