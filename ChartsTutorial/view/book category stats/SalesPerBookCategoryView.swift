@@ -1,11 +1,5 @@
-//
-//  SalesPerBookCategoryView.swift
-//  ChartsTutorial
-//
-//  Created by Геннадий Машталяр on 01.02.2024.
-//
-
 import SwiftUI
+import Charts
 
 struct SalesPerBookCategoryView: View {
     var body: some View {
