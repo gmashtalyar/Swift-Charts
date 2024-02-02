@@ -52,6 +52,11 @@ class SalesViewModel: ObservableObject {
         
     }
     
+    func fetchSalesData() {
+        // TODO: get new data
+        salesData = Sale.threeMonthsExamples()
+    }
+    
     func salesGroupedByWeek(sales: [Sale]) -> [Date: [Sale]] {
         var salesByWeek: [Date: [Sale]] = [:]
         let calendar = Calendar.current
