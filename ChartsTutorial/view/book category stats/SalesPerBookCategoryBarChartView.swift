@@ -18,6 +18,10 @@ struct SalesPerBookCategoryBarChartView: View {
         }
         .aspectRatio(1, contentMode: .fit)
         .chartLegend(.hidden)
+        .chartForegroundStyleScale([BookCategory.fiction.displayName: .purple,
+                                    BookCategory.business.displayName: .cyan,
+                                    BookCategory.children.displayName: .yellow,
+                                    BookCategory.computerScience.displayName: .indigo])
     }
 }
 

@@ -12,6 +12,11 @@
 		DC576DA42B66647C006391C7 /* WeeklyChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC576DA32B66647C006391C7 /* WeeklyChartsView.swift */; };
 		DC576DA62B666489006391C7 /* MonthlyChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC576DA52B666489006391C7 /* MonthlyChartsView.swift */; };
 		DC62BB842B6E53E200412A6A /* ExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62BB832B6E53E200412A6A /* ExpensesViewModel.swift */; };
+		DC62BB862B6E58C400412A6A /* ExpensesLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62BB852B6E58C400412A6A /* ExpensesLineChartView.swift */; };
+		DC62BB882B6E58D200412A6A /* ExpensesBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62BB872B6E58D200412A6A /* ExpensesBarChartView.swift */; };
+		DC62BB8A2B6E58FD00412A6A /* ExpensesDetailGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62BB892B6E58FD00412A6A /* ExpensesDetailGridView.swift */; };
+		DC62BB8C2B6E590D00412A6A /* DetailExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62BB8B2B6E590D00412A6A /* DetailExpensesView.swift */; };
+		DC62BB8E2B6E591C00412A6A /* SimpleExpensesLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC62BB8D2B6E591C00412A6A /* SimpleExpensesLineChartView.swift */; };
 		DC703EB02B6606E500E589E1 /* ChartsTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EAF2B6606E500E589E1 /* ChartsTutorialApp.swift */; };
 		DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC703EB12B6606E500E589E1 /* ContentView.swift */; };
 		DC703EB42B6606E700E589E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC703EB32B6606E700E589E1 /* Assets.xcassets */; };
@@ -39,6 +44,11 @@
 		DC576DA32B66647C006391C7 /* WeeklyChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyChartsView.swift; sourceTree = "<group>"; };
 		DC576DA52B666489006391C7 /* MonthlyChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyChartsView.swift; sourceTree = "<group>"; };
 		DC62BB832B6E53E200412A6A /* ExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewModel.swift; sourceTree = "<group>"; };
+		DC62BB852B6E58C400412A6A /* ExpensesLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesLineChartView.swift; sourceTree = "<group>"; };
+		DC62BB872B6E58D200412A6A /* ExpensesBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesBarChartView.swift; sourceTree = "<group>"; };
+		DC62BB892B6E58FD00412A6A /* ExpensesDetailGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesDetailGridView.swift; sourceTree = "<group>"; };
+		DC62BB8B2B6E590D00412A6A /* DetailExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpensesView.swift; sourceTree = "<group>"; };
+		DC62BB8D2B6E591C00412A6A /* SimpleExpensesLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleExpensesLineChartView.swift; sourceTree = "<group>"; };
 		DC703EAC2B6606E500E589E1 /* ChartsTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC703EAF2B6606E500E589E1 /* ChartsTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTutorialApp.swift; sourceTree = "<group>"; };
 		DC703EB12B6606E500E589E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +130,11 @@
 		DC576D9F2B6662E3006391C7 /* expenses stats */ = {
 			isa = PBXGroup;
 			children = (
+				DC62BB852B6E58C400412A6A /* ExpensesLineChartView.swift */,
+				DC62BB872B6E58D200412A6A /* ExpensesBarChartView.swift */,
+				DC62BB892B6E58FD00412A6A /* ExpensesDetailGridView.swift */,
+				DC62BB8B2B6E590D00412A6A /* DetailExpensesView.swift */,
+				DC62BB8D2B6E591C00412A6A /* SimpleExpensesLineChartView.swift */,
 			);
 			path = "expenses stats";
 			sourceTree = "<group>";
@@ -265,17 +280,22 @@
 				DC81CF502B6C2E390056A1E2 /* SalesPerBookCategoryBarChartView.swift in Sources */,
 				DC81CF4E2B6C2E210056A1E2 /* SalesPerBookCategoryPieChartView.swift in Sources */,
 				DC81CF522B6C2E500056A1E2 /* SalesPerBookCategoryView.swift in Sources */,
+				DC62BB8A2B6E58FD00412A6A /* ExpensesDetailGridView.swift in Sources */,
 				DCC5E8812B6A39AF00768784 /* SalesByWeekDayView.swift in Sources */,
 				DC7D4ECD2B67AE2700833015 /* SimpleBookSalesView.swift in Sources */,
 				DCC5E8832B6A39D200768784 /* SimpleSalesByWeekdayView.swift in Sources */,
+				DC62BB8E2B6E591C00412A6A /* SimpleExpensesLineChartView.swift in Sources */,
 				DC703EB22B6606E500E589E1 /* ContentView.swift in Sources */,
 				DC81CF542B6C2E6D0056A1E2 /* SimpleSalesPerBookCategoryView.swift in Sources */,
 				DC576D9B2B665F80006391C7 /* SalesViewModel.swift in Sources */,
+				DC62BB862B6E58C400412A6A /* ExpensesLineChartView.swift in Sources */,
 				DCC5E8852B6A3F6500768784 /* SalesByWeekdayHeaderView.swift in Sources */,
 				DC703EC22B6607E500E589E1 /* Author.swift in Sources */,
+				DC62BB8C2B6E590D00412A6A /* DetailExpensesView.swift in Sources */,
 				DC576DA42B66647C006391C7 /* WeeklyChartsView.swift in Sources */,
 				DC703EC42B6608B700E589E1 /* Book.swift in Sources */,
 				DC703EC62B660D1600E589E1 /* Sale.swift in Sources */,
+				DC62BB882B6E58D200412A6A /* ExpensesBarChartView.swift in Sources */,
 				DC703EB02B6606E500E589E1 /* ChartsTutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
