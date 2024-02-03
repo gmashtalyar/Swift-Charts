@@ -11,7 +11,9 @@ struct ContentView: View {
                 Section {
                     NavigationLink {
                         DetailBookSalesView(salesViewModel: salesViewModel)
+                            #if os(iOS)
                             .navigationBarTitleDisplayMode(.inline)
+                            #endif
                     } label: {
                         SimpleBookSalesView(salesViewModel: salesViewModel)
                     }
@@ -19,7 +21,9 @@ struct ContentView: View {
                 Section {
                     NavigationLink {
                         SalesByWeekDayView(salesViewModel: salesViewModel)
+                            #if os(iOS)
                             .navigationBarTitleDisplayMode(.inline)
+                            #endif
                     } label: {
                         SimpleSalesByWeekdayView(salesViewModel: salesViewModel)
                     }
@@ -27,7 +31,9 @@ struct ContentView: View {
                 Section {
                     NavigationLink {
                         SalesPerBookCategoryView(salesViewModel: salesViewModel)
+                            #if os(iOS)
                             .navigationBarTitleDisplayMode(.inline)
+                            #endif
                     } label: {
                         SimpleSalesPerBookCategoryView(salesViewModel: salesViewModel)
                     }
@@ -35,7 +41,9 @@ struct ContentView: View {
                 Section {
                     NavigationLink {
                         DetailExpensesView(expensesViewModel: expensesViewModel)
+                            #if os(iOS)
                             .navigationBarTitleDisplayMode(.inline)
+                            #endif
                     } label: {
                         SimpleExpensesLineChartView(expensesViewModel: expensesViewModel)
                     }
