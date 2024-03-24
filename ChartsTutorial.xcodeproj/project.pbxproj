@@ -34,10 +34,50 @@
 		DC81CF522B6C2E500056A1E2 /* SalesPerBookCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81CF512B6C2E500056A1E2 /* SalesPerBookCategoryView.swift */; };
 		DC81CF542B6C2E6D0056A1E2 /* SimpleSalesPerBookCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81CF532B6C2E6D0056A1E2 /* SimpleSalesPerBookCategoryView.swift */; };
 		DC81CF562B6C2EBB0056A1E2 /* SalesPerBookCategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC81CF552B6C2EBB0056A1E2 /* SalesPerBookCategoryHeaderView.swift */; };
+		DC917CDF2BB04D3C00D877BC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC917CDE2BB04D3C00D877BC /* WidgetKit.framework */; };
+		DC917CE12BB04D3C00D877BC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC917CE02BB04D3C00D877BC /* SwiftUI.framework */; };
+		DC917CE82BB04D3C00D877BC /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC917CE72BB04D3C00D877BC /* Graph.swift */; };
+		DC917CEC2BB04D3D00D877BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC917CEB2BB04D3D00D877BC /* Assets.xcassets */; };
+		DC917CF02BB04D3E00D877BC /* GraphExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DC917CDC2BB04D3C00D877BC /* GraphExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC917CFA2BB05F3D00D877BC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC917CDE2BB04D3C00D877BC /* WidgetKit.framework */; };
+		DC917CFB2BB05F3D00D877BC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC917CE02BB04D3C00D877BC /* SwiftUI.framework */; };
+		DC917D0A2BB05F4000D877BC /* TestWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DC917CF92BB05F3D00D877BC /* TestWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DCC5E8812B6A39AF00768784 /* SalesByWeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5E8802B6A39AF00768784 /* SalesByWeekDayView.swift */; };
 		DCC5E8832B6A39D200768784 /* SimpleSalesByWeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5E8822B6A39D200768784 /* SimpleSalesByWeekdayView.swift */; };
 		DCC5E8852B6A3F6500768784 /* SalesByWeekdayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5E8842B6A3F6500768784 /* SalesByWeekdayHeaderView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC917CEE2BB04D3E00D877BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC703EA42B6606E500E589E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC917CDB2BB04D3C00D877BC;
+			remoteInfo = GraphExtension;
+		};
+		DC917D082BB05F4000D877BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC703EA42B6606E500E589E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC917CF82BB05F3D00D877BC;
+			remoteInfo = TestWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC917CF12BB04D3E00D877BC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DC917D0A2BB05F4000D877BC /* TestWidgetExtension.appex in Embed Foundation Extensions */,
+				DC917CF02BB04D3E00D877BC /* GraphExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC576D9A2B665F80006391C7 /* SalesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewModel.swift; sourceTree = "<group>"; };
@@ -69,6 +109,13 @@
 		DC81CF512B6C2E500056A1E2 /* SalesPerBookCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPerBookCategoryView.swift; sourceTree = "<group>"; };
 		DC81CF532B6C2E6D0056A1E2 /* SimpleSalesPerBookCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSalesPerBookCategoryView.swift; sourceTree = "<group>"; };
 		DC81CF552B6C2EBB0056A1E2 /* SalesPerBookCategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPerBookCategoryHeaderView.swift; sourceTree = "<group>"; };
+		DC917CDC2BB04D3C00D877BC /* GraphExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GraphExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC917CDE2BB04D3C00D877BC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DC917CE02BB04D3C00D877BC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DC917CE72BB04D3C00D877BC /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		DC917CEB2BB04D3D00D877BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC917CED2BB04D3D00D877BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC917CF92BB05F3D00D877BC /* TestWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TestWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC5E8802B6A39AF00768784 /* SalesByWeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesByWeekDayView.swift; sourceTree = "<group>"; };
 		DCC5E8822B6A39D200768784 /* SimpleSalesByWeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSalesByWeekdayView.swift; sourceTree = "<group>"; };
 		DCC5E8842B6A3F6500768784 /* SalesByWeekdayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesByWeekdayHeaderView.swift; sourceTree = "<group>"; };
@@ -79,6 +126,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC917CD92BB04D3C00D877BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC917CE12BB04D3C00D877BC /* SwiftUI.framework in Frameworks */,
+				DC917CDF2BB04D3C00D877BC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC917CF62BB05F3D00D877BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC917CFB2BB05F3D00D877BC /* SwiftUI.framework in Frameworks */,
+				DC917CFA2BB05F3D00D877BC /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				DC703EAE2B6606E500E589E1 /* ChartsTutorial */,
+				DC917CE22BB04D3C00D877BC /* Graph */,
+				DC917CDD2BB04D3C00D877BC /* Frameworks */,
 				DC703EAD2B6606E500E589E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -163,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				DC703EAC2B6606E500E589E1 /* ChartsTutorial.app */,
+				DC917CDC2BB04D3C00D877BC /* GraphExtension.appex */,
+				DC917CF92BB05F3D00D877BC /* TestWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,6 +272,25 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		DC917CDD2BB04D3C00D877BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC917CDE2BB04D3C00D877BC /* WidgetKit.framework */,
+				DC917CE02BB04D3C00D877BC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC917CE22BB04D3C00D877BC /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				DC917CE72BB04D3C00D877BC /* Graph.swift */,
+				DC917CEB2BB04D3D00D877BC /* Assets.xcassets */,
+				DC917CED2BB04D3D00D877BC /* Info.plist */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,15 +301,52 @@
 				DC703EA82B6606E500E589E1 /* Sources */,
 				DC703EA92B6606E500E589E1 /* Frameworks */,
 				DC703EAA2B6606E500E589E1 /* Resources */,
+				DC917CF12BB04D3E00D877BC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DC917CEF2BB04D3E00D877BC /* PBXTargetDependency */,
+				DC917D092BB05F4000D877BC /* PBXTargetDependency */,
 			);
 			name = ChartsTutorial;
 			productName = ChartsTutorial;
 			productReference = DC703EAC2B6606E500E589E1 /* ChartsTutorial.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DC917CDB2BB04D3C00D877BC /* GraphExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC917CF42BB04D3E00D877BC /* Build configuration list for PBXNativeTarget "GraphExtension" */;
+			buildPhases = (
+				DC917CD82BB04D3C00D877BC /* Sources */,
+				DC917CD92BB04D3C00D877BC /* Frameworks */,
+				DC917CDA2BB04D3C00D877BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphExtension;
+			productName = GraphExtension;
+			productReference = DC917CDC2BB04D3C00D877BC /* GraphExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DC917CF82BB05F3D00D877BC /* TestWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC917D0B2BB05F4000D877BC /* Build configuration list for PBXNativeTarget "TestWidgetExtension" */;
+			buildPhases = (
+				DC917CF52BB05F3D00D877BC /* Sources */,
+				DC917CF62BB05F3D00D877BC /* Frameworks */,
+				DC917CF72BB05F3D00D877BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestWidgetExtension;
+			productName = TestWidgetExtension;
+			productReference = DC917CF92BB05F3D00D877BC /* TestWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -234,6 +359,12 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					DC703EAB2B6606E500E589E1 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					DC917CDB2BB04D3C00D877BC = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					DC917CF82BB05F3D00D877BC = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -252,6 +383,8 @@
 			projectRoot = "";
 			targets = (
 				DC703EAB2B6606E500E589E1 /* ChartsTutorial */,
+				DC917CDB2BB04D3C00D877BC /* GraphExtension */,
+				DC917CF82BB05F3D00D877BC /* TestWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +396,21 @@
 			files = (
 				DC703EB82B6606E700E589E1 /* Preview Assets.xcassets in Resources */,
 				DC703EB42B6606E700E589E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC917CDA2BB04D3C00D877BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC917CEC2BB04D3D00D877BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC917CF72BB05F3D00D877BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +452,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC917CD82BB04D3C00D877BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC917CE82BB04D3C00D877BC /* Graph.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC917CF52BB05F3D00D877BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC917CEF2BB04D3E00D877BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC917CDB2BB04D3C00D877BC /* GraphExtension */;
+			targetProxy = DC917CEE2BB04D3E00D877BC /* PBXContainerItemProxy */;
+		};
+		DC917D092BB05F4000D877BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC917CF82BB05F3D00D877BC /* TestWidgetExtension */;
+			targetProxy = DC917D082BB05F4000D877BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DC703EB92B6606E700E589E1 /* Debug */ = {
@@ -359,7 +535,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -414,7 +592,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -424,6 +604,7 @@
 		DC703EBC2B6606E700E589E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ChartsTutorial/ChartsTutorial.entitlements;
@@ -462,6 +643,7 @@
 		DC703EBD2B6606E700E589E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ChartsTutorial/ChartsTutorial.entitlements;
@@ -497,6 +679,128 @@
 			};
 			name = Release;
 		};
+		DC917CF22BB04D3E00D877BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BCCUVY4KWG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Graph/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Graph;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-org.ChartsTutorial.Graph";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC917CF32BB04D3E00D877BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BCCUVY4KWG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Graph/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Graph;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-org.ChartsTutorial.Graph";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC917D0C2BB05F4000D877BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BCCUVY4KWG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TestWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-org.ChartsTutorial.TestWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC917D0D2BB05F4000D877BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BCCUVY4KWG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TestWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-org.ChartsTutorial.TestWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -514,6 +818,24 @@
 			buildConfigurations = (
 				DC703EBC2B6606E700E589E1 /* Debug */,
 				DC703EBD2B6606E700E589E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC917CF42BB04D3E00D877BC /* Build configuration list for PBXNativeTarget "GraphExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC917CF22BB04D3E00D877BC /* Debug */,
+				DC917CF32BB04D3E00D877BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC917D0B2BB05F4000D877BC /* Build configuration list for PBXNativeTarget "TestWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC917D0C2BB05F4000D877BC /* Debug */,
+				DC917D0D2BB05F4000D877BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
